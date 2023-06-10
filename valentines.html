@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>valentines</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="body">
+    <audio id="audio" src="A Thousand Years.mp3" loop></audio>
+    <ul>
+      <li onclick="playAudio()" id="play-audio">
+        tocar música
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-play-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+          />
+        </svg>
+      </li>
+      <li onclick="pauseAudio()" id="pause-audio">
+        pausar música
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-pause"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"
+          />
+        </svg>
+      </li>
+    </ul>
+
+    <div class="panel">
+      <h1 id="title">quer namorar comigo?</h1>
+      <img src="dancing-pooh.gif" id="image" />
+
+      <button id="yes" onclick="accepted()">sim!</button>
+      <button id="no" onmouseover="runaway()" onclick="runaway()">não!</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
